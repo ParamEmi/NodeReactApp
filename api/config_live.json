@@ -1,0 +1,21 @@
+{
+    "BASE_URL": "http://3.12.9.63:5000",
+    "FRONT_BASE_URL": "http://3.12.9.63:3000",
+    "ADMIN_BASE_URL": "http://3.12.9.63:3001",
+    "GET_URL": "/media/eminence/cec43c02-323e-4438-a474-7fc35f8dd58a/projects/co2-api/uploads/",
+    "MONGO_URL": "mongodb://10.0.2.246:27017/xprojectdb",
+    "MAILER_EMAIL": "test.dev788@gmail.com",
+    "MAILER_PASSWORD": "admin@1234!",
+    "MAILER_HOST": "smtp.gmail.com",
+    "SMTP_FROM_EMAIL": "test.dev788@gmail.com",
+    "FRONTEND_JWT_SECRET": "frontend-seckret",
+    "FRONTEND_USER_JWT_SECRET": "frontent-user-seckretkey",
+    "JWT_ACCOUNT_ACTIVATION": "activate_account_seckret",
+    "JWT_RESET_PASSWORD": "reset_account_seckret",
+    "JWT_INVITE_WORKSPACE": "jwt_invite_workspace",
+    "REACT_APP_API_URL": "http://3.12.9.63:5000",
+    "PORT": 5000,
+    "CLIENT_URL": "http://3.12.9.63:3000/forgot",
+    "CLIENT_URL_FRONT": "http://3.12.9.63:3001/forgot"
+  }
+  

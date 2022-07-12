@@ -1,0 +1,25 @@
+@import url(../scss/Mixin.scss);
+body{
+    font-family: 'Raleway', sans-serif;
+}
+html,body,#root{
+    height: 100%;
+}
+img{
+    max-width: 100%;
+}
+input,select,.btn,button{
+    &:focus{
+        box-shadow: none!important;
+        outline: none!important;
+    }
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+    li{
+        list-style: none;
+    }
+}
+
+
