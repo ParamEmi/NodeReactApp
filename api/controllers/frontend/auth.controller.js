@@ -71,12 +71,10 @@ const signup = async (req, res) => {
     const {
       email,
       password,
-      businessName,
       firstName,
       phone,
       mobile,
       state,
-      businessType,
       reffered,
     } = req.body;
     const user = await authService.findOne({ email, isDeleted: false });

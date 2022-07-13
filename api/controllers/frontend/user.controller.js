@@ -4,6 +4,21 @@ const usersService = require("../../services/users.services");
 
 const { pick } = require("lodash");
 
+const testFun = async (req, res) => {
+  try {
+    
+  
+    return res.status(201).json({
+      success: true,
+      message: "User added succesfully",
+      data: {},
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+
 const createUser = async (req, res) => {
   try {
     const { firstName, email, password, addedBy } = req.body;
@@ -13,14 +28,14 @@ const createUser = async (req, res) => {
       password,
       role: 3,
     };
-    const user1 = await usersService.findOne(req._user);
-    if (!user1)
-      return res.status(401).json({
-        success: false,
-        message: "User not found with provided token!!",
-      });
+    // const user1 = await usersService.findOne(req._user);
+    // if (!user1)
+    //   return res.status(401).json({
+    //     success: false,
+    //     message: "User not found with provided token!!",
+    //   });
 
-    user.addedBy = user1._id;
+    // user.addedBy = user1._id;
 
     const createdUser = await userService.post(user);
     return res.status(201).json({
@@ -182,4 +197,5 @@ module.exports = {
   userDelete,
   UserSearch,
   loginStatusUpdate,
+  testFun,
 };

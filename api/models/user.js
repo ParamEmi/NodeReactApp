@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 var userSchema = new Schema(
   {
-    businessName: { type: String },
+    
     email: { type: String, required: true },
     firstName: { type: String, required: true },
     lastName: { type: String },
@@ -11,7 +11,6 @@ var userSchema = new Schema(
     phone: { type: Number },
     mobile: { type: Number },
     state: { type: String },
-    businessType: { type: Schema.Types.ObjectId, ref: "Business" },
     reffered: { type: String },
     resetLink: {
       type: String,

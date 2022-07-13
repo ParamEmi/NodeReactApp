@@ -54,7 +54,7 @@ const sendActivationMail = async (email) => {
       subject: `Account Invitation`,
       body: `
           <h1>Please use the following link to activate your account</h1>
-          <p> <a href="${CONFIG.FRONT_lOGIN}/account/activate/${token}">Activate Account</a> </p>
+          <p> <a href="${CONFIG.BASE_URL}/frontend/account/activate/${token}">Activate Account</a> </p>
           <hr />
           <p>This email may contain sensetive information</p>
           <p></p>

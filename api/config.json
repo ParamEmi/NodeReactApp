@@ -3,7 +3,7 @@
   "FRONT_BASE_URL": "http://localhost:3000",
   "ADMIN_BASE_URL": "http://localhost:3001",
   "GET_URL": "/media/eminence/cec43c02-323e-4438-a474-7fc35f8dd58a/projects/co2-api/uploads/",
-  "MONGO_URL": "mongodb://localhost:27017/bi-i",
+  "MONGO_URL": "mongodb://localhost:27017/NodeDB",
   "MAILER_EMAIL": "anthony@creditproof.ca",
   "MAILER_PASSWORD": "#BetterPartners!",
   "MAILER_HOST": "smtp.office365.com",
