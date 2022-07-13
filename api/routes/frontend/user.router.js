@@ -8,4 +8,5 @@ router.put("/edit/:id", userController.UserEdit);
 router.delete("/remove/:id", userController.userDelete);
 router.get("/search/:pageNo/:limit/:text", userController.UserSearch);
 router.put("/loginStatus", userController.loginStatusUpdate);
+router.get("/test", userController.testFun);
 module.exports = router;

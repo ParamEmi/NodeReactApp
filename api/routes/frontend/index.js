@@ -16,7 +16,5 @@ router.use("/business", businessRouter);
 
 router.use("/personal", authMiddleware, personal_budgets);
 router.use("/company", authMiddleware, company_budget);
-
 router.use("/user", authMiddleware, userRouter);
-//
 module.exports = router;

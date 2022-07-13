@@ -12,7 +12,6 @@ router.post(
     check("password").not().isEmpty().withMessage("password field is required"),
   ],
   validator,
-
   authController.signin
 );
 router.post(
