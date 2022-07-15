@@ -40,6 +40,7 @@ const verifyJWT = (resetToken) => {
     return false;
   }
 };
+
 const comparePassword = async (password, enteredPassword) => {
   const valid = await bcrypt.compare(password, enteredPassword);
   if (valid) {

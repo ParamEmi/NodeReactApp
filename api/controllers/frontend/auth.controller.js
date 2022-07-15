@@ -186,6 +186,7 @@ const resetPassword = async (req, res) => {
               const obj = {
                 password: hash,
               };
+              
               user = _.extend(users, obj);
 
               user.save((err, result) => {

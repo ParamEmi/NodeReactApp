@@ -7,12 +7,15 @@ const get = (pageNo, limit) => {
     .limit(limit)
     .sort({ _id: -1 });
 };
+
 const update = (condition, payload) => {
   return userCollection.findByIdAndUpdate(condition, payload);
 };
+
 const updatestatus = (condition, payload) => {
   return userCollection.updateOne(condition, payload);
 };
+
 const findEmail = (condition) => userCollection.findOne(condition);
 const findOne = (condition) => userCollection.findById(condition);
 const getUsersBySearch = (text) => {

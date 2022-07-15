@@ -43,5 +43,6 @@ router.put(
   validator,
   authController.editprofile
 );
+
 router.get("/getUser/:id", authController.getUser);
 module.exports = router;

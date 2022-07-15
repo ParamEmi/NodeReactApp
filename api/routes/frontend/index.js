@@ -7,13 +7,12 @@ const businessRouter = require("./business.router");
 
 const { authMiddleware } = require("../../middlewares/frontend/authMiddleware");
 const userRouter = require("./user.router");
-
+const imageRouter =  require("./image.router");
 const router = express.Router();
 
 router.use("/", authRouter);
-
+router.use("/image", imageRouter);
 router.use("/business", businessRouter);
-
 router.use("/personal", authMiddleware, personal_budgets);
 router.use("/company", authMiddleware, company_budget);
 router.use("/user", authMiddleware, userRouter);
