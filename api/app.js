@@ -18,6 +18,9 @@ app.use("/uploads", express.static("uploads"));
 require("./config/database");
 app.use("/admin", require("./routes/admin/index"));
 app.use("/frontend", require("./routes/frontend/index"));
+app.use("/", (req, res) => {
+  res.send("<h1> Hello World </h1>");
+});
 
 app.use((err, req, res, next) => {
   err.statusCode = err.statusCode || 500;
