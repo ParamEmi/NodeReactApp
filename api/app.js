@@ -6,7 +6,7 @@ var cors = require("cors");
 const logger = require("morgan");
 const CONFIG = require("./config.json");
 
-const port = CONFIG.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(logger("dev"));
